@@ -3,15 +3,15 @@
 // ============================================================
 export const config = {
     developer: {
-        name: "Your Name",
-        fullName: "Your Name",
+        name: "Sajeel Tariq",
+        fullName: "Sajeel Tariq",
         title: "AI Engineer",
         description: "AI Engineer building intelligent systems and the backends that power them. Focused on LLMs, applied machine learning, and reliable production software."
     },
     social: {
-        github: "yourusername",
-        email: "you@example.com",
-        location: "Your City, Country"
+        github: "SajeelTariq",
+        email: "sajeeltariqst@gmail.com",
+        location: "Karachi, Pakistan"
     },
     about: {
         title: "About Me",
@@ -19,74 +19,56 @@ export const config = {
     },
     experiences: [
         {
-            position: "Learning Something New",
-            company: "Self-Development",
-            period: "Present",
-            location: "Remote",
-            description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
-            responsibilities: [
-                "Researching cutting-edge AI and ML techniques",
-                "Experimenting with new frameworks and tools",
-                "Contributing to open-source projects",
-                "Building innovative personal projects"
-            ],
-            technologies: ["Research", "LLMs", "Open Source", "New Tech"]
-        },
-        {
             position: "AI Engineer",
-            company: "Company Name",
-            period: "2024",
-            location: "Remote",
-            description: "Building AI-powered features end to end: LLM integrations, RAG pipelines, and the backend services around them. Turning AI capabilities into reliable production software.",
+            company: "Intellexal Solutions",
+            period: "2026 - Present",
+            location: "Karachi, Pakistan",
+            description: "Building AI-powered conversational systems — including a WhatsApp chatbot for Indolj that lets customers place food orders in natural language, driving additional orders through WhatsApp. Designing Retrieval-Augmented Generation (RAG) pipelines for a Communication-as-a-Service (CaaS) product and building knowledge-base chatbots with tool integrations. Also built a high-performance analytics dashboard over 40M+ live records with FastAPI, React, and Docker, and optimized OLAP analytical queries on 40GB+ datasets using partitioning and indexing for fast retrieval under heavy workloads.",
             responsibilities: [
-                "Integrating LLMs into products and workflows",
-                "Building retrieval-augmented generation pipelines",
-                "Designing and shipping backend APIs",
-                "Evaluating and improving model quality"
+                "Built a WhatsApp ordering chatbot for Indolj using natural language, increasing orders via WhatsApp",
+                "Built knowledge-base chatbots with tool integrations",
+                "Designed RAG pipelines for a CaaS product",
+                "Developed an analytics dashboard over 40M+ live records and optimized OLAP queries on 40GB+ datasets"
             ],
-            technologies: ["Python", "LLMs", "RAG", "FastAPI", "PostgreSQL"]
+            technologies: ["LLMs", "RAG", "Chatbots", "WhatsApp", "FastAPI", "React", "Docker", "OLAP"]
         },
         {
-            position: "Backend / ML Developer",
-            company: "Previous Company",
-            period: "2023",
-            location: "Remote",
-            description: "Developed Python backends and machine learning components, from data pipelines to model-serving APIs.",
+            position: "Data Science Intern",
+            company: "EvantageSoft",
+            period: "2025",
+            location: "Karachi, Pakistan",
+            description: "Processed large-scale legal datasets to build domain-specific knowledge bases for RAG systems. Implemented Fusion RAG and Corrective RAG architectures to improve retrieval accuracy and reasoning, and built autonomous AI agents using LangGraph, CrewAI, and AutoGen to automate workflows.",
             responsibilities: [
-                "Building RESTful APIs and services",
-                "Developing ML models and data pipelines",
-                "Deploying and maintaining services",
-                "Working with databases and queues"
+                "Built domain-specific knowledge bases from large legal datasets",
+                "Implemented Fusion RAG and Corrective RAG architectures",
+                "Built autonomous AI agents with LangGraph, CrewAI, and AutoGen"
             ],
-            technologies: ["Python", "FastAPI", "PyTorch", "Docker", "Redis"]
+            technologies: ["RAG", "LangGraph", "CrewAI", "AutoGen", "Python", "NLP"]
         },
         {
-            position: "Python Developer",
-            company: "Self-Taught & Projects",
-            period: "2022",
-            location: "Remote",
-            description: "Dove deep into Python, building automation, tools, and mastering the fundamentals of software development and problem-solving.",
+            position: "B.S. Computer Science — AI Specialization",
+            company: "NED University of Engineering & Technology",
+            period: "2022 - 2026",
+            location: "Karachi, Pakistan",
+            description: "Bachelor of Science in Computer Science with a specialization in Artificial Intelligence (CGPA 3.84). Coursework and projects spanning machine learning, deep learning, NLP, and software engineering.",
             responsibilities: [
-                "Learning Python and core CS concepts",
-                "Building automation scripts and tools",
-                "Exploring data structures and algorithms",
-                "Practicing problem-solving"
-            ],
-            technologies: ["Python", "Automation", "Scripting", "Problem Solving"]
-        },
-        {
-            position: "B.Sc. — AI Specialization",
-            company: "Your University",
-            period: "2020",
-            location: "Your City",
-            description: "Degree with a specialization in artificial intelligence, covering machine learning, deep learning, NLP, and software engineering fundamentals.",
-            responsibilities: [
-                "Machine learning and deep learning",
-                "Natural language processing",
-                "Software engineering fundamentals",
-                "Capstone AI project"
+                "Specialization in Artificial Intelligence",
+                "CGPA: 3.84",
+                "Machine learning, deep learning, NLP, and software engineering"
             ],
             technologies: ["Machine Learning", "Deep Learning", "NLP", "Python"]
+        },
+        {
+            position: "Intermediate in Computer Science",
+            company: "Bahria College Karsaz",
+            period: "2020 - 2022",
+            location: "Karachi, Pakistan",
+            description: "Intermediate in Computer Science (86%), building the foundation in programming and core computer science concepts.",
+            responsibilities: [
+                "Intermediate in Computer Science",
+                "Percentage: 86%"
+            ],
+            technologies: ["Programming", "Computer Science"]
         }
     ],
     projects: [
@@ -140,12 +122,12 @@ export const config = {
         }
     ],
     contact: {
-        email: "you@example.com",
-        github: "https://github.com/yourusername",
-        linkedin: "https://linkedin.com/in/yourusername",
-        twitter: "https://x.com/yourusername",
-        facebook: "https://www.facebook.com/yourusername",
-        instagram: "https://www.instagram.com/yourusername"
+        email: "sajeeltariqst@gmail.com",
+        github: "https://github.com/SajeelTariq",
+        linkedin: "https://www.linkedin.com/in/sajeeltariq",
+        twitter: "",
+        facebook: "",
+        instagram: "https://www.instagram.com/sajeel_tariq_st?igsh=MWVobjQ3OGQ4cG45cA=="
     },
     skills: {
         develop: {
