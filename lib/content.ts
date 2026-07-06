@@ -128,37 +128,33 @@ export const projects: Project[] = [
 ];
 
 export type TimelineItem = {
-  period: string;
+  year: string; // big display label, e.g. "NOW", "2025", "2024"
   title: string;
-  org: string;
+  subtitle: string; // accent-colored line under the title
   description: string;
-  type: "work" | "education";
 };
 
 export const timeline: TimelineItem[] = [
   {
-    period: "2024 — Present",
+    year: "NOW",
     title: "AI Engineer",
-    org: "Company Name",
+    subtitle: "Company Name",
     description:
       "Building AI-powered features end to end: LLM integrations, RAG pipelines, and the backend services around them. Focused on turning AI capabilities into reliable production software.",
-    type: "work",
   },
   {
-    period: "2023 — 2024",
+    year: "2024",
     title: "Backend / ML Developer",
-    org: "Previous Company",
+    subtitle: "Previous Company",
     description:
       "Developed Python backends and machine learning components, from data pipelines to model serving APIs.",
-    type: "work",
   },
   {
-    period: "2020 — 2024",
-    title: "B.Sc. — Specialization in Artificial Intelligence",
-    org: "Your University",
+    year: "2020",
+    title: "B.Sc. — AI Specialization",
+    subtitle: "Your University",
     description:
       "Degree with a specialization in AI, covering machine learning, deep learning, NLP, and software engineering fundamentals.",
-    type: "education",
   },
 ];
 
