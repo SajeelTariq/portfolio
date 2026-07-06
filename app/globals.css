@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  THEME — change your whole look from here.
+  Colors are space-separated RGB channels so Tailwind's <alpha-value> works.
+  Want a different accent? Change --accent (and --accent-glow) only.
+*/
+:root {
+  --bg: 8 9 13;          /* page background */
+  --surface: 16 18 26;   /* cards / panels */
+  --border: 34 38 52;    /* subtle borders */
+  --muted: 148 155 173;  /* secondary text */
+  --fg: 233 236 244;     /* primary text */
+  --accent: 45 212 191;  /* teal/cyan accent — change me */
+  --accent-glow: 45 212 191;
+}
+
+* {
+  border-color: rgb(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Lenis smooth scroll: disable native smooth-scroll when JS is active */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Ambient background glow */
+.bg-grid {
+  background-image:
+    linear-gradient(rgb(var(--border) / 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--border) / 0.35) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+}
+
+.accent-glow {
+  box-shadow: 0 0 60px -10px rgb(var(--accent-glow) / 0.55);
+}
+
+.text-gradient {
+  background: linear-gradient(
+    120deg,
+    rgb(var(--fg)) 0%,
+    rgb(var(--accent)) 60%,
+    rgb(var(--fg)) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--bg));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--border));
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--accent) / 0.6);
+}
+
+::selection {
+  background: rgb(var(--accent) / 0.3);
+  color: rgb(var(--fg));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
